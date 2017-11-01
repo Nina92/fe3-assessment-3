@@ -1,0 +1,78 @@
+body {
+  padding-left: 25px;
+}
+
+h1, h2, h3 {
+  font-family: "Bree Serif", serif;
+}
+
+h1 {
+  max-width: 10em;
+}
+
+p, label, text, td {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  max-width: 21em;
+}
+
+/* bar chart*/
+#barChartContainer {
+  margin-top: -360px;
+  margin-left: 353px;
+}
+
+.axis--x line, .axis--x path {
+  display: none;
+}
+
+.axis--y {
+  transform: translateY(-14px);
+}
+
+.axis--y text {
+  transform: translateY(-3px);
+}
+
+text {
+  fill: black;
+  font-size: 11px;
+}
+
+.bar {
+  fill: #8CBEB2;
+}
+
+.bar:hover {
+  fill: #5C4B51;
+}
+
+/* pie chart*/
+#pieChartContainer {
+  position: fixed;
+  left: 1100px;
+  top: 75px;
+}
+
+/* legend */
+#countryName {
+  position: fixed;
+  left: 1100px;
+  top: 300px;
+}
+
+#legend {
+  position: fixed;
+  left: 1100px;
+  top: 357px;
+}
+
+td:nth-child(2) {
+  padding-left: 6px;
+}
+
+td:last-child {
+  padding-left: 20px;
+}

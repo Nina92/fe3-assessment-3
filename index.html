@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf8>
+		<title>Assessment 3 FINAL</title>
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1>Worldwide Alcohol Consumption</h1>
+
+		<p>This bar chart shows how much alcohol was consumed per person per country in 2010. If you hover over a bar, you'll see a pie chart for the corresponding country which is divided in servings of beer, spirits and wine.</p>
+
+		<h2>Sort by:</h2>
+
+		<input type=radio name="sort" id="countryAToZ" value="countryAToZ" checked="true">
+		<label for="countryAToZ">Country (A - Z)</label><br>
+		<input type=radio name="sort" id="litresAscending" value="litresAscending">
+		<label for="litresAscending">Litres of pure alcohol (lowest - highest)</label><br>
+		<input type=radio name="sort" id="litresDescending" value="litresDescending">
+		<label for="litresDescending">Litres of pure alcohol (highest - lowest)</label>
+
+		<div id="legendContainer">
+			<h3 id="countryName"></h3>
+		</div>
+
+		<svg id="barChartContainer" width="600" height="9950"></svg>
+		<svg id="pieChartContainer"></svg>
+
+		<script src=https://d3js.org/d3.v4.min.js></script>
+		<script src="script.js"></script>
+	</body>
+</html>
